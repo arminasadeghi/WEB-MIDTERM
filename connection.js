@@ -45,7 +45,7 @@ function submitName() {
 
 function saveData(name) {
     if (!maleRadioButton.checked && !femaleRadioButton.checked) {
-        alert('ridi')
+        showAllert()
         return;
     }
     submitName();
