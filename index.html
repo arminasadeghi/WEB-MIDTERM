@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Male or Female?</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="center-flex">
+
+<div class="center-flex column">
+    <div class="alert-flex center-flex column" id="alert-box">
+            <p>null error</p>
+
+    </div>
+    <div class="box-flex center-flex">
+        <form class=" box-flex column">
+            <h1 >Mr. or Ms.?</h1>
+            <div class="flex">
+                <label for="name-input">Name</label>
+                <input class="name-input"
+                       maxlength="255"
+                       autofocus
+                       type="text"
+                       id="name-input"
+                />
+            </div>
+            <div name="male-gender-tick" class="display-flex">
+                <input type="radio" name="gender" id="male-gender" value="male"/>
+                <label for="male-gender">Male</label>
+            </div>
+            <div name="female-gender-tick" class="display-flex">
+                <input type="radio" name="gender" id="female-gender" value="female"/>
+                <label for="female-gender">Female</label>
+            </div>
+            <input type="submit" id="submit" onclick=" submitName()"/>
+            <button id="save" onclick="saveData(nameInput.value)">save</button>
+        </form>
+        <div class=" box-flex column">
+            <h1 >Prediction</h1>
+            <div id="result">
+                <p id="result-gender">gender: -</p>
+                <p id="result-probability">probability: -</p>
+            </div>
+            <div id="save-answer">
+                <h2>Saved Answer</h2>
+                <p id="saved-result">saved</p>
+                <button id="clear" onclick="clearFromLocalStorage(nameInput.value)">clear</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="connection.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+body, html {
+    background-image: url("background.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    width: 100%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-flex{
+    border: 1px solid orange;
+    background: transparent;
+    color: red;
+    border-radius: 0.5rem;
+    padding: 10px;
+
+}
+.box-flex{
+    background: #ffffff66 ;
+    border: 1px;
+    padding:10px;
+    margin: 10px;
+    border-radius: 1rem;
+
+}
+.left-part-of-box-flex{
+    margin-left: 10px;
+
+
+}
+.right-part-of-box-flex{
+
+}
+.name-input{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+
+.flex {
+    display: flex;
+}
+
+#submit {
+    background-color: forestgreen;
+    color: lightseagreen;
+}
+
+#save {
+    background-color: deepskyblue;
+    color: darkblue;
+}
+
+#clear {
+    background-color: gray;
+    color: deeppink;
+    width: 100%;
+}
+
+#save-answer {
+    visibility: hidden;
+}
+
+
+div:not(:last-child) {
+    margin-bottom: 10px;
+}
